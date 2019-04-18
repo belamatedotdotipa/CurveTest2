@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eob-OX-of2">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ProgrammaticVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ProgrammaticVC" customModule="CurveTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--StoryboardVC-->
+        <scene sceneID="IHK-4S-SxA">
+            <objects>
+                <viewController id="eob-OX-of2" customClass="StoryboardVC" customModule="CurveTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="umf-Mr-V4i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jfN-Hg-OjE">
+                                <rect key="frame" x="20" y="40" width="335" height="607"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bkS-bp-lpH" firstAttribute="bottom" secondItem="jfN-Hg-OjE" secondAttribute="bottom" constant="20" id="7Kr-YP-U9W"/>
+                            <constraint firstItem="bkS-bp-lpH" firstAttribute="trailing" secondItem="jfN-Hg-OjE" secondAttribute="trailing" constant="20" id="VAs-Kb-pm2"/>
+                            <constraint firstItem="jfN-Hg-OjE" firstAttribute="top" secondItem="bkS-bp-lpH" secondAttribute="top" constant="20" id="ejS-RZ-Fwc"/>
+                            <constraint firstItem="jfN-Hg-OjE" firstAttribute="leading" secondItem="bkS-bp-lpH" secondAttribute="leading" constant="20" id="kBM-Nh-zdd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bkS-bp-lpH"/>
+                    </view>
+                    <connections>
+                        <outlet property="curvyView" destination="jfN-Hg-OjE" id="a3p-Fd-sYt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1MT-cb-GGi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57" y="714"/>
+        </scene>
+    </scenes>
+</document>
